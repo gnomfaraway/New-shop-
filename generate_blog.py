@@ -19,6 +19,11 @@ def save_post(content):
     with open(filename, "w", encoding="utf-8") as f:
         f.write(content)
 
+def post_to_socials(content):
+    # Placeholder: Here you would add API calls for Reddit, Twitter, Pinterest
+    print("Would auto-post to Reddit, Twitter, Pinterest with link to blog.")
+
 if __name__ == "__main__":
     post = generate_blog_post()
     save_post(post)
+    post_to_socials(post)
